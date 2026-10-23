@@ -11,8 +11,8 @@ The goal of DMRqr is to identify differentially methylated regions using quantil
 You can install the development version of DMRqr like so:
 
 ``` r
-#install.packages("devtools")
-devtools::install_github("duanww2026/DMRqr")
+#install.packages("pak")
+pak::pak("duanww2026/DMRqr")
 ```
 
 ## Example
