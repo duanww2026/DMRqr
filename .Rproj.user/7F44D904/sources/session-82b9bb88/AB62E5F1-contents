@@ -1,7 +1,7 @@
 Package: DMRqr
 Type: Package
 Title: Identification of Differentially Methylated Regions Using Quantile Regression
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person(given = "Linfang", family = "Lyu", role = "aut"),
     person(given = "Weiwei", family = "Duan", email = "passion@njmu.edu.cn", role = c("aut", "cre"))
