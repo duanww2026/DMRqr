@@ -21,5 +21,12 @@ usethis::use_mit_license("Weiwei Duan")
 devtools::document()
 devtools::check()
 
+# 添加.gitignore文件
+usethis::git_vaccinate()
+
+# 升版本
+usethis::use_version("major")    # desc::desc_set_version("1.0.0")
+
+
 
 
