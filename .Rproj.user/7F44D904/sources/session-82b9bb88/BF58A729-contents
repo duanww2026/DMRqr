@@ -1,0 +1,25 @@
+setwd("C:\\study\\研一\\课题研究\\论文\\NAR投稿\\说明文件\\DMRqr")
+library("usethis", "devtools", "roxygen2")
+
+devtools::has_devel()
+# 写好函数注释之后需运行
+devtools::document()
+# 创建一个README.md文件
+usethis::use_readme_md()
+# 封装之前的检查
+devtools::check()
+
+usethis::use_package("stats", type = "Imports")
+usethis::use_package("MASS", type = "Imports")
+usethis::use_package("quantreg", type = "Imports")
+
+# 修改DESCRIPTION文件
+usethis::use_author(given = "Linfang", family = "Lyu", role = c("aut"))
+usethis::use_author(given = "Weiwei", family = "Duan", role = c("aut", "cre"), email = "passion@njmu.edu.cn")
+usethis::use_mit_license("Weiwei Duan")
+
+devtools::document()
+devtools::check()
+
+
+
