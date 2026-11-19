@@ -12,7 +12,7 @@ devtools::install_github("duanww2026/DMRqr")
 
 ## Example
 
-### Methylation values in matrix format
+Methylation values in matrix format
 
 ``` r
 library(DMRqr)
@@ -26,7 +26,7 @@ z <- matrix(rbinom(m * 2, 1, 0.2), ncol = 2)
 DMRqr(methylation = y, phenotype = x, covariates = z, taus = taus)
 ```
 
-### Methylation values in long format
+Methylation values in long format
 
 ``` r
 set.seed(1234)
