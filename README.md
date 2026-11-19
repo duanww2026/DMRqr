@@ -1,14 +1,9 @@
 
 # DMRqr
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of DMRqr is to identify differentially methylated regions using quantile regression.
+DMRqr is an R package for identifying differentially methylated regions based on quantile regression.
 
 ## Installation
-
-You can install the development version of DMRqr like so:
 
 ``` r
 #install.packages("devtools")
@@ -16,8 +11,6 @@ devtools::install_github("duanww2026/DMRqr")
 ```
 
 ## Example
-
-This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(DMRqr)

@@ -141,6 +141,7 @@ geescore = function(y, x, z, k, subject, tau=0.5)
   r <- as.numeric(delta0-tau^2)/(tau-tau^2)
   Vi <- (tau-tau^2)*((1-r)*I+r*J)
   invVi <- 1/(tau-tau^2)*(J/(k*(1+(k-1)*r))+1/(1-r)*(I-J/k))
+  if (r==1) invVi <- MASS::ginv(Vi)
   U <- rep(0, p)
   Vhat <- matrix(0, p, p)
   for (i in 1:ncol(subject)){
