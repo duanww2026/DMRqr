@@ -24,7 +24,6 @@ taus <- c(0.1, 0.3, 0.5, 0.7, 0.9)
 z <- matrix(rbinom(m * 2, 1, 0.2), ncol = 2)
 DMRqr(methylation = y, phenotype = x, covariates = z, taus = taus)
 
-
 ## Methylation values in long format
 set.seed(1234)
 m <- 100
